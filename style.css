@@ -1,0 +1,87 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    height: 50%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+section:hover {
+    transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+h2 {
+    cursor: pointer;
+    user-select: none;
+    padding: 1em;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    transform-origin: center; 
+}
+
+
+
+div {
+    padding: 1em;
+    display: none;
+}
+.footer{
+    display: block;
+}
+p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
